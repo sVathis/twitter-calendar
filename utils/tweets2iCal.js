@@ -30,7 +30,7 @@ function main() {
                 console.error(error);
                 return;
             }
-            fs.writeFileSync(`tweets.ics`, value);
+//            fs.writeFileSync(`tweets.ics`, value);
         }
       });
 }

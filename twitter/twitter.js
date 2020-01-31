@@ -5,11 +5,6 @@ var
     TweetToEvent = require('./TweetToEvent')
 
 var config = {
-    'secrets' : {
-      'clientId' : process.env.FOURSQUARE_CLIENT_ID,
-      'clientSecret' : process.env.FOURSQUARE_CLIENT_SECRET,
-      'redirectUrl' : 'http://fondu.com/oauth/authorize'
-    },
     winston : {
         all: {
           level: 'info'
@@ -18,19 +13,19 @@ var config = {
 }
 
 const myparams = {
-  screenName:  process.env.TWITTER_SCREEN_NAME,
+  screenName:  process.env.TWITTERSCREENNAME,
   count: 200,
-  tweet_mode:  process.env.TWITTER_TWEET_MODE
+  tweet_mode:  process.env.TWITTERTWEETMODE
 }
 
 const myopts = {
   credentials: {
-    consumerKey: process.env.TWITTER_CONSUMER_KEY,
-    consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
-    accessToken: process.env.TWITTER_ACCESS_TOKEN,
-    accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+    consumerKey: process.env.TWITTERCONSUMERKEY,
+    consumerSecret: process.env.TWITTERCONSUMERSECRET,
+    accessToken: process.env.TWITTERACCESSTOKEN,
+    accessTokenSecret: process.env.TWITTERACCESSTOKENSECRET
   },
-  limit:  process.env.TWITTER_MAX_TWEETS,
+  limit:  process.env.TWITTERMAXTWEETS,
 }
 
 var twitterlogger = winston.createLogger({
