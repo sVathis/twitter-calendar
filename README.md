@@ -150,6 +150,7 @@ This endpoint returns your last `TWITTERMAXTWEETS` tweets (up to 3200).
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
 * [Azure Function Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 * [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+* [twit](https://github.com/ttezel/twit)
 * [ics](https://github.com/adamgibbons/ics)
 
 ## Authors
